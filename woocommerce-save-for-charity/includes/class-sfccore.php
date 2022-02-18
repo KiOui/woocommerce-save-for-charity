@@ -108,11 +108,11 @@ if ( ! class_exists( 'SFCCore' ) ) {
 		 * Add actions and filters.
 		 */
 		private function actions_and_filters() {
-			include_once WOO_SFC_ABSPATH . '/includes/sfc-functions.php';
-			include_once WOO_SFC_ABSPATH . '/includes/class-sfcsettings.php';
+			include_once WOO_SFC_ABSPATH . 'includes/sfcfunctions.php';
+			include_once WOO_SFC_ABSPATH . 'includes/class-sfcsettings.php';
 
 			add_action( 'init', array( $this, 'init' ) );
-			add_action( 'woocommerce_payment_complete', 'sfc_increase_total_saved_for_charity' );
+			add_action( 'woocommerce_pre_payment_complete', 'sfc_increase_total_saved_for_charity' );
 			SFCSettings::instance();
 		}
 

@@ -17,6 +17,11 @@ if ( ! class_exists( 'SFCShortcode' ) ) {
 	 */
 	class SFCShortcode {
 
+		/**
+		 * Total amount saved to be printed in shortcode.
+		 *
+		 * @var float
+		 */
 		private float $total_saved;
 
 		/**
@@ -33,7 +38,7 @@ if ( ! class_exists( 'SFCShortcode' ) ) {
 		 */
 		public function do_shortcode(): string {
 			ob_start();
-			echo wc_price( number_format($this->total_saved,2) );
+			echo esc_html( wc_price( number_format( $this->total_saved, 2 ) ) );
 			$ob_content = ob_get_contents();
 			ob_end_clean();
 

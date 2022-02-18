@@ -132,7 +132,7 @@ if ( ! class_exists( 'SFCSettings' ) ) {
 			$options = get_option( 'woo_sfc_settings' ); ?>
 			<p><?php echo esc_html( __( 'Percentage of each order to save for charity', 'woocommerce-save-for-charity' ) ); ?></p>
 			<input type='number' name='woo_sfc_settings[woo_sfc_charity_save_percentage]'
-			       value="<?php echo esc_attr( $options['woo_sfc_charity_save_percentage'] ); ?>">
+				   value="<?php echo esc_attr( $options['woo_sfc_charity_save_percentage'] ); ?>">
 			<?php
 		}
 
@@ -144,7 +144,7 @@ if ( ! class_exists( 'SFCSettings' ) ) {
 			?>
 			<p><?php echo esc_html( __( 'The total amount of money saved for charity.', 'woocommerce-save-for-charity' ) ); ?></p>
 			<input type='number' name='woo_sfc_settings[woo_sfc_total_saved_for_charity]'
-			       value="<?php echo esc_attr( $options['woo_sfc_total_saved_for_charity'] ); ?>">
+				   value="<?php echo esc_attr( $options['woo_sfc_total_saved_for_charity'] ); ?>">
 			<?php
 		}
 

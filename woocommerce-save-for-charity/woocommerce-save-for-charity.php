@@ -25,15 +25,19 @@ if ( ! defined( 'WOO_SFC_PLUGIN_URI' ) ) {
 
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-if (is_plugin_active('woocommerce/woocommerce.php')) {
+if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
 	include_once dirname( __FILE__ ) . '/includes/class-sfccore.php';
 	$GLOBALS['WOO_SFC_CORE'] = SFCCore::instance();
 } else {
-	function wbv_admin_notice_woocommerce_inactive()
-	{
-		if (is_admin() && current_user_can('edit_plugins')) {
-			echo '<div class="notice notice-error"><p>' . __('Woocommerce Save for Charity requires WooCommerce to be active. Please activate WooCommerce to use WooCommerce Save for Charity.') . '</p></div>';
+	/**
+	 * Print error message when WooCommerce is not active.
+	 *
+	 * @return void
+	 */
+	function woo_sfc_admin_notice_woocommerce_inactive() {
+		if ( is_admin() && current_user_can( 'edit_plugins' ) ) {
+			echo '<div class="notice notice-error"><p>' . esc_html( __( 'Woocommerce Save for Charity requires WooCommerce to be active. Please activate WooCommerce to use WooCommerce Save for Charity.' ) ) . '</p></div>';
 		}
 	}
-	add_action('admin_notices', 'wbv_admin_notice_woocommerce_inactive');
+	add_action( 'admin_notices', 'woo_sfc_admin_notice_woocommerce_inactive' );
 }

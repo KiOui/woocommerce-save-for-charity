@@ -1,0 +1,74 @@
+# Copyright (C) 2022 Lars van Rhijn
+# This file is distributed under the same license as the WooCommerce Save For Charity plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Save For Charity 0.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-save-for-charity\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-02-18T16:59:39+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.6.0\n"
+"X-Domain: woocommerce-save-for-charity\n"
+
+#. Plugin Name of the plugin
+msgid "WooCommerce Save For Charity"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://github.com/KiOui/woocommerce-save-for-charity"
+msgstr ""
+
+#. Description of the plugin
+msgid "Save a percentage of your WooCommerce orders for charity."
+msgstr ""
+
+#. Author of the plugin
+msgid "Lars van Rhijn"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://larsvanrhijn.nl/"
+msgstr ""
+
+#: includes/class-sfcsettings.php:62
+#: includes/class-sfcsettings.php:63
+msgid "Save for Charity"
+msgstr ""
+
+#: includes/class-sfcsettings.php:72
+#: views/sfc-admin-dashboard-view.php:10
+msgid "Save for Charity Dashboard"
+msgstr ""
+
+#: includes/class-sfcsettings.php:73
+msgid "Dashboard"
+msgstr ""
+
+#: includes/class-sfcsettings.php:92
+msgid "Counter settings"
+msgstr ""
+
+#: includes/class-sfcsettings.php:99
+msgid "Amount saved for charity"
+msgstr ""
+
+#: includes/class-sfcsettings.php:107
+msgid "How many percent to save for charity per order"
+msgstr ""
+
+#: includes/class-sfcsettings.php:133
+msgid "Percentage of each order to save for charity"
+msgstr ""
+
+#: includes/class-sfcsettings.php:145
+msgid "The total amount of money saved for charity."
+msgstr ""
+
+#: includes/class-sfcsettings.php:155
+#: views/sfc-admin-dashboard-view.php:12
+msgid "Save for Charity settings"
+msgstr ""
